@@ -14,12 +14,7 @@ using System.Linq;
 public class State : IState
 {
     //-------------------------------------------------------------------------------------------------------------------------------------------
-    // Most of the Logic for this script was found on someones already completed project
-    // I did my best not to copy to much and tried to understand the logic and functioning in the code
-    // Here is the website: https://github.com/STXRM00/ChineseCheckers/blob/master/Assets/Scripts/State.cs
-
-    // Most of the things used in expand i found on stackoverflow, but it seems to be the same author for those posts aswell
-    // So I link to the github page instead, I will however add in the parts i found on stackoverflow and had to solve myself into the report
+    // Most of the things used in expand i found on stackoverflow
     //___________________________________________________________________________________________________________________________________________
 
 
@@ -94,7 +89,6 @@ public class State : IState
 
     public int Score(IPlayer player)
     {
-        // This was taken from Amandas code
         List<Position> ownPiecePosition = new List<Position>();
         Piece piece = ((Player)player).Value();
         int score = new int();
